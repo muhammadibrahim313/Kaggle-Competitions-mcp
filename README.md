@@ -52,9 +52,6 @@ That difference is the main thing you need to understand before using Kaggle MCP
 | `arc_agi2_baseline.py` | Baseline notebook code for ARC-style competitions |
 | `submit_code_competition_notebook.py` | Helper script for notebook-based competition submissions |
 | `kaggle_mcp_call.ps1` | General PowerShell MCP caller |
-| `manual_mcp_examples.md` | Example MCP calls and terminal usage |
-| `kaggle-mcp-medium-article.md` | Draft/article version used for publication |
-| `feature-image-prompt.txt` | Feature image prompt for the article banner |
 
 ## Quick Start
 
