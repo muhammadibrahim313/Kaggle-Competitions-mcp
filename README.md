@@ -16,6 +16,32 @@ The goal of this repo is simple:
 2. show the correct MCP workflow for a notebook-based competition
 3. keep the helper scripts in one place so you can test or extend them later
 
+---
+
+## What Kaggle MCP Actually Unlocks
+
+Kaggle MCP exposes **57 tools** across competitions, notebooks, datasets, models, benchmarks, forums, and writeups.
+
+Most people connect the server and stop there. The real value starts after setup.
+
+Here is a grouped view of what is available:
+
+| Category | Tools |
+|---|---|
+| **Competitions** | submit files, submit notebook versions, check leaderboards, download data, search competitions |
+| **Notebooks** | create sessions, inspect session status, list outputs, save notebooks, list files |
+| **Datasets** | download, search, get info and metadata, update metadata, upload files |
+| **Models** | list models, get model info, list and get variations, download model versions |
+| **Benchmarks** | create tasks from prompt, get benchmark leaderboard |
+| **Forums & Writeups** | list forums, get topics, get writeups by slug or topic, list hackathon writeups |
+| **Discovery** | search competitions, notebooks, datasets, content, competition submissions |
+
+The article covers the two submission flows in detail. Every other tool is available the moment your server is running.
+
+> Full article with more on what you can do: [How to Submit to Kaggle Competitions Using MCP (VS Code)](https://medium.com/@ibrahim313/how-to-submit-to-kaggle-competitions-using-mcp-vs-code-9003bbb5af63)
+
+---
+
 ## What This Repo Covers
 
 Kaggle competitions usually fall into two practical submission types:
@@ -42,6 +68,8 @@ Examples:
 
 That difference is the main thing you need to understand before using Kaggle MCP for submissions.
 
+---
+
 ## Repo Contents
 
 | File | Purpose |
@@ -52,6 +80,8 @@ That difference is the main thing you need to understand before using Kaggle MCP
 | `arc_agi2_baseline.py` | Baseline notebook code for ARC-style competitions |
 | `submit_code_competition_notebook.py` | Helper script for notebook-based competition submissions |
 | `kaggle_mcp_call.ps1` | General PowerShell MCP caller |
+
+---
 
 ## Quick Start
 
@@ -133,6 +163,8 @@ Then use VS Code chat with:
 Use Kaggle MCP create_code_competition_submission for competition "arc-prize-2026-arc-agi-2". Submit notebook owner "YOUR_KAGGLE_USERNAME", slug "YOUR_NOTEBOOK_SLUG", version YOUR_VERSION_NUMBER, file "submission.json", description "ARC MCP baseline from VS Code". Do not use the file-upload submission flow.
 ```
 
+---
+
 ## Terminal Helpers
 
 If you want to test MCP flows from the terminal, this repo includes helper scripts.
@@ -155,6 +187,8 @@ python .\submit_code_competition_notebook.py --competition arc-prize-2026-arc-ag
 .\kaggle_mcp_call.ps1 -ToolName get_competition -RequestJson '{"competitionName":"titanic"}'
 ```
 
+---
+
 ## Why This Repo Exists
 
 Most people will connect Kaggle MCP and stop there.
@@ -171,6 +205,8 @@ That is why the repo focuses on:
 - one notebook-based competition flow
 - reusable helper scripts for extension or automation later
 
+---
+
 ## Useful Links
 
 - [Medium Article](https://medium.com/@ibrahim313/how-to-submit-to-kaggle-competitions-using-mcp-vs-code-9003bbb5af63)
@@ -178,6 +214,8 @@ That is why the repo focuses on:
 - [Titanic Competition](https://www.kaggle.com/competitions/titanic)
 - [ARC Prize 2026 - ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2)
 - [Kaggle Profile](https://www.kaggle.com/ibrahimqasimi)
+
+---
 
 ## Author
 
