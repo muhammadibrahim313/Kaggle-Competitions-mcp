@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "kaggle-token",
+      "description": "Paste your Kaggle token when VS Code asks for it",
+      "password": true
+    }
+  ],
+  "servers": {
+    "kaggle": {
+      "type": "http",
+      "url": "https://www.kaggle.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:kaggle-token}"
+      }
+    }
+  }
+}

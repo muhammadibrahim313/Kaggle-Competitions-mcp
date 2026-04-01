@@ -1,0 +1,11 @@
+screenshots
+*.log
+.env
+.venv
+__pycache__
+*.pyc
+data
+feature-image-prompt.txt
+kaggle-mcp-medium-article.md
+manual_mcp_examples.md
+submission.json
